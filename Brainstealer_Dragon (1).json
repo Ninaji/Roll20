@@ -1,0 +1,290 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "GuiaDosLimoeiros",
+				"abbreviation": "Limao",
+				"full": "Guia Dos Limoeiros",
+				"url": "",
+				"authors": [
+					"Glub"
+				],
+				"convertedBy": [
+					"Glub"
+				]
+			}
+		],
+		"dateAdded": 1613516255,
+		"dateLastModified": 1613516255
+	},
+	"monster": [
+		{
+			"name": "Brainstealer Dragon",
+			"source": "GuiaDosLimoeiros",
+			"page": 97,
+			"size": "G",
+			"type": "aberration",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"Psyshield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "28d20 + 252",
+				"average": 812
+			},
+			"speed": {
+				"fly": {
+					"number": 80,
+					"condition": "hover"
+				},
+				"canHover": true
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 29,
+			"int": 30,
+			"wis": 15,
+			"cha": 23,
+			"save": {
+				"con": "+16",
+				"wis": "+9",
+				"cha": "+13",
+				"int": "+17",
+				"dex": "+7"
+			},
+			"skill": {
+				"perception": "+9",
+				"stealth": "+7"
+			},
+			"senses": [
+				"blindsight 10 ft"
+			],
+			"passive": 19,
+			"immune": [
+				"acid",
+				"fire",
+				"psychic"
+			],
+			"languages": [
+				"Common",
+				"Draconic,",
+				"Undercommon",
+				"Deep Speech",
+				"Gith",
+				"telepathy"
+			],
+			"cr": "24",
+			"trait": [
+				{
+					"name": "Legendary Resistance (5/Day)",
+					"entries": [
+						"If the Brainstealer fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The brainstealer has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Mindfulness",
+					"entries": [
+						"The brainstealer can choose to not affect any number of creatures with his area of effect feature and spells."
+					]
+				},
+				{
+					"name": "Creature Sense",
+					"entries": [
+						"The brainstealer is aware of the presence of creatures within 5 miles of it that have an Intelligence score of 4 or higher. It knows the distance and direction to each creature, as well as each one's intelligence score, but can't sense anything else about it. A creature protected by a {@spell mind blank} spell, a {@spell nondetection} spell, or similar magic can't be perceived in this manner.",
+						"Additionaly the brainstealer gains the following traits against creatured perceived by this feature:",
+						"{@i 1. } The brainstealer can target sensed by spells that requires a creatures to be seen.",
+						"{@i 2. } Sensed creatures gains no advantage for not being seem by the brainstealer.",
+						"{@i 3. } The brainstealer can make opportunity attacks agains sensed creatures despite not being able to see them."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Brainstealer uses it Frightful Presence then cast 2 different spells "
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the Brainstealer's choice that is within 120 feet of the Brainstealer and aware of it must succeed on a {@dc 21} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 30 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage.  If the target is a Huge or smaller creature, it is {@condition grappled} (escape {@dc} 15) and takes 9 ({@damage 1d8 + 5}) psychic damage at the start of each of its turns until the grapple ends. The brainstealer can have up to five targets {@condition grappled} at a time."
+					]
+				},
+				{
+					"name": "Extract Brain",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}59 ({@damage 10d10 + 4}) piercing damage, plus 5 ({@damage 2d4}) psychic damage.if the damage reduces the target to 0 hit points , the brainstealer kills the target by extracting and devouring its brain."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Psionics",
+					"entries": [
+						"the brainstealer cast a spell"
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"The brainstealer dragon makes a tentacle attack."
+					]
+				},
+				{
+					"name": "mind blast (Cost 3 Action)",
+					"entries": [
+						"The Brainstealer magically emits psychic energy. Creatures of the Brainstealer's choice within 60 feet of it must succeed on a {@dc 19} Intelligence saving throw or take 32 ({@damage 5d10 + 5}) psychic damage and be {@condition stunned} for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Break Concentration",
+					"entries": [
+						"The brainstealer targets a creature it can sense. The creature has to succeed on a {@dc 26} Constituition saving throw or lose its concentration on spells."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/red-dragon.mp3?v=1.122.8"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack",
+				"Tentacles"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"U",
+				"DS",
+				"GTH",
+				"TP"
+			],
+			"damageTags": [
+				"B",
+				"Y",
+				"P"
+			],
+			"conditionInflict": [
+				"frightened",
+				"grappled",
+				"stunned"
+			],
+			"conditionInflictLegendary": [
+				"incapacitated",
+				"poisoned",
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Ancient Red Dragon.png?v=1.122.8",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MM/Red Dragon.jpg"
+						}
+					}
+				]
+			},
+			"shortName": "Brainstealer",
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"grappled",
+				"incapacitated",
+				"prone",
+				"unconscious"
+			],
+			"resist": [
+				{
+					"special": "All Spell Damage"
+				}
+			],
+			"legendaryActions": 5,
+			"environment": [
+				"astral sea"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psyonics)",
+					"headerEntries": [
+						"The elder brain's innate spellcasting ability is Intelligence (spell save {@dc 22}). It can innately cast the following spells, requiring no components:"
+					],
+					"will": [
+						"{@spell antilife shell}",
+						"{@spell dominate monster}",
+						"{@spell hypnotic pattern}",
+						"{@spell mental prison|XGE}",
+						"{@spell phantasmal killer}",
+						"{@spell pulse wave|EGW}",
+						"{@spell reverse gravity}",
+						"{@spell scatter|XGE}",
+						"{@spell wall of force}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell feeblemind}",
+							"{@spell plane shift} (The whole Fortress)"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"mythic": [
+				{
+					"name": "Mind Overload",
+					"entries": [
+						"Every single creature within the brainstealer's lair has to succeed on a {@dc 26} Constitution saving throw or lose its concentration on spells."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Mind Carapace",
+					"entries": [
+						"When a creature moves within 15 feet of the brainstealer it can cast {@spell antilife shell} as a reaction requiring no concentration. The spell lasts until the beginning of the brainstealer next turn."
+					]
+				}
+			]
+		}
+	]
+}
